@@ -78,6 +78,8 @@ int					get_next_line(const int fd, char **line);
 void				ft_swap(int *a, int *b);
 int					ft_sqrt(int nb);
 int					ft_sqrt_next(int nb);
+size_t				ft_strcspn(const char *s1, const char *s2);
+
 
 typedef struct		s_list
 {

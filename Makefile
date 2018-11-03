@@ -27,7 +27,7 @@ SOURCE = ft_atoi.c ft_bzero.c ft_is_lower.c ft_is_upper.c ft_isalnum.c \
 		ft_strncpy.c ft_strndup.c ft_strnequ.c ft_strnew.c ft_strnstr.c \
 		ft_strrchr.c ft_strsplit.c ft_strstr.c ft_strsub.c ft_strtrim.c \
 		ft_tolower.c ft_toupper.c get_next_line.c ft_swap.c ft_sqrt.c \
-		ft_sqrt_next.c
+		ft_sqrt_next.c ft_strcspn.c
 
 OBJ = $(subst .c,.o,$(SOURCE))
 SRC_DIR = $(addprefix src/, $(SOURCE))
@@ -35,7 +35,7 @@ INCLUDE = includes/
 
 GGCOLORCYAN = \033[96m
 GGCOLORGREEN = \033[32m
-GGCOLORRED = \033[31m 
+GGCOLORRED = \033[31m
 GGRESET = \033[39m
 
 all: $(NAME)
