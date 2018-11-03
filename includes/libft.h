@@ -79,6 +79,7 @@ void				ft_swap(int *a, int *b);
 int					ft_sqrt(int nb);
 int					ft_sqrt_next(int nb);
 size_t				ft_strcspn(const char *s1, const char *s2);
+char				*ft_strpbrk(const char *s1, const char *s2);
 
 
 typedef struct		s_list
