@@ -64,10 +64,10 @@ int				ft_line(char **tab, char **line)
 
 int				get_next_line(const int fd, char **line)
 {
-	static char	*tab[OPEN_MAX];
+	static char	*tab[_SC_OPEN_MAX];
 	char		*buf;
-
-	if (fd > OPEN_MAX || fd < 0 || !line || BUFF_SIZE <= 0 ||
+	
+	if (fd > _SC_OPEN_MAX || fd < 0 || !line || BUFF_SIZE <= 0 ||
 		!(buf = ft_strnew(BUFF_SIZE + 1))
 		|| (tab[fd] == NULL && !(tab[fd] = ft_strnew(0))))
 		return (-1);
